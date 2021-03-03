@@ -22,7 +22,7 @@ class RequestClient(object):
         if "secret_key" in kwargs:
             secret_key = kwargs["secret_key"]
         if "url" in kwargs:
-            url = kwargs["url"]
+            url = kwargs["server_url"]
         try:
             self.request_impl = RestApiRequestImpl(api_key, secret_key, url)
         except Exception:
